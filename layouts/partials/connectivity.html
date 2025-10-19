@@ -1,0 +1,47 @@
+<script>
+(function() {
+    const connectivityContainer = document.createElement('div');
+    connectivityContainer.className = 'connectivity-container';
+
+    const connectivityElement = document.createElement('div');
+    connectivityElement.className = 'connectivity-indicator';
+    connectivityElement.textContent = 'Checking intranet connectivity...';
+
+    const helpElement = document.createElement('div');
+    helpElement.className = 'connectivity-help';
+    helpElement.style.display = 'none';
+
+    connectivityContainer.appendChild(connectivityElement);
+    connectivityContainer.appendChild(helpElement);
+
+    function showHelp() {
+        helpElement.innerHTML = `
+            <ul>
+                <li>Check that you have enabled Cubly VPN or connected to Cubly WiFi</li>
+                <li>Verify your DNS settings are configured correctly</li>
+            </ul>
+        `;
+        helpElement.style.display = 'block';
+    }
+
+    fetch('https://echo-server.h.cubly.ru/', {
+        credentials: 'omit'
+    })
+    .then(response => {
+        if (response.status === 200) {
+            connectivityElement.className = 'connectivity-indicator ok';
+            connectivityElement.textContent = 'Intranet is available';
+        } else {
+            connectivityElement.className = 'connectivity-indicator http-error';
+            connectivityElement.textContent = `Intranet server returned HTTP code ${response.status}`;
+        }
+    })
+    .catch(error => {
+        connectivityElement.className = 'connectivity-indicator nok';
+        connectivityElement.textContent = 'Intranet is NOT available';
+        showHelp();
+    });
+
+    document.body.appendChild(connectivityContainer);
+})();
+</script>

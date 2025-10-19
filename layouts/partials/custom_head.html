@@ -1,0 +1,58 @@
+<style>
+  .logo a {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  .connectivity-indicator {
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: blue;
+  }
+
+  .connectivity-indicator.ok {
+    color: green;
+  }
+
+  .connectivity-indicator.nok {
+    color: red;
+  }
+
+  .connectivity-indicator.http-error {
+    color: orange;
+  }
+
+  .connectivity-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .connectivity-help {
+    font-size: 11px;
+    color: #666;
+    margin-top: 5px;
+  }
+
+  .connectivity-help ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+  .connectivity-help li {
+    margin: 2px 0;
+  }
+
+  .connectivity-help li:before {
+    content: "• ";
+    color: #999;
+  }
+</style>
