@@ -1,6 +1,21 @@
 
-This domain is used exclusively for internal projects and development purposes. If you've arrived here, you've likely reached this page by mistake.
+## About This Domain
 
-If you are a user of any services hosted on "cubly.ru" domain or its subdomains, please read our [Privacy Policy](/privacy-policy).
+This is an internal-only platform used exclusively for development, testing, and project management purposes. We host various self-hosted tools and services here, including:
+
+- **Self-hosted automation platforms** (n8n for task automations and workflows)
+- **Development environments** and testing instances
+- **Internal dashboards** and monitoring tools
+- **Project management** and collaboration tools
+
+If you've arrived here unexpectedly, you may have followed an incorrect link.
+
+## For Users
+
+If you are using services hosted on the `cubly.ru` domain or its subdomains, please review our [Privacy Policy](/privacy-policy).
+
+## Need Help?
+
+If you believe you should have access to a service on this domain, please contact the development team.
 
 
