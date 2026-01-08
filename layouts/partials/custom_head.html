@@ -58,4 +58,51 @@
     content: "• ";
     color: #999;
   }
+
+  .title span>* {
+    margin: 0;
+  }
+
+  .title span {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 1.8em;
+  }
+
+  .title h2 {
+    font-size: 0.75em;
+    color: #777;
+  }
+
+  @keyframes gradientScroll {
+    0% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0% 0;
+    }
+  }
+
+  .who-is-max {
+    background: linear-gradient(90deg, #6149c6 0%, #d4a8b8 25%, #6149c6 50%, #d4a8b8 75%, #6149c6 100%);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientScroll 7s linear infinite;
+  }
+
+  .who-is-max:hover {
+    background: #6149c6;
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 </style>
