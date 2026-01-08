@@ -1,7 +1,12 @@
+---
+description: "Internal homelab and testing services portal. Provides access to self-hosted automation platforms, development environments, dashboards, and monitoring tools for authorized users only."
+---
 
 ## About This Domain
 
-This is an internal-only service used exclusively for internal homelab and testing purposes. We host various self-hosted tools and services here, including:
+**Purpose:** This portal provides access to internal development and testing services for the Cubly homelab project. It is an internal-only service used exclusively for homelab and testing purposes.
+
+We host various self-hosted tools and services here, including:
 
 - **Self-hosted automation platforms** (n8n for task automations and workflows)
 - **Development environments** and testing instances

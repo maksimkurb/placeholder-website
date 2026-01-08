@@ -3,8 +3,11 @@
 {{ $logo := resources.Get "cave.png" }}
 {{ $processedLogo := $logo.Resize "100x" }}
 <a href="{{ "" | relURL }}" class="title" style="text-align: center;">
-  <img src="{{ $processedLogo.RelPermalink }}" alt="Cave logo" style="width: 100px;"/>
-  <h2>{{ .Site.Title }}</h2>
+  <img src="{{ $processedLogo.RelPermalink }}" alt="Cave logo" style="width: 100px; height: 82px"/>
+  <span>
+    <h1>{{ .Site.Title }}</h1>
+    <h2>(Max's Cave)</h2>
+  </span>
 </a>
 </div>
 
